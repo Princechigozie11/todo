@@ -1,0 +1,91 @@
+/* ===================== CUSTOM FONT STYLE ==================== */
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Arvo:wght@400;700&family=Caveat&family=Fira+Sans:wght@400;500&family=Libre+Baskerville&family=Outfit:wght@400;700&family=Tangerine:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Arvo", serif;
+}
+
+:root {
+  --linearColor1: rgb(173, 216, 230);
+  --linearColor2: hsl(351, 100%, 86%);
+  --secondaryColor: rgb(128, 128, 128);
+  --deleteColor: rgb(255, 0, 0);
+  --whiteColor: rgb(255, 255, 255);
+  --todoColor: rgb(0, 0, 128);
+}
+
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.value-container {
+  width: 80%;
+  margin-top: 10vh;
+  padding: 30px;
+  background: linear-gradient(
+    to right,
+    var(--linearColor1),
+    var(--linearColor2)
+  );
+}
+
+.value-container h1 {
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+
+.value-container .input {
+  padding: 5px 3px;
+  width: 250px;
+  border: 1px solid var(--linearColor1);
+  outline: none;
+}
+
+.value-container .btn {
+  outline: none;
+  padding: 5px 3px;
+  border: 1px solid var(--linearColor1);
+  background: var(--whiteColor);
+  color: var(--secondaryColor);
+  width: 125px;
+}
+
+.list-container {
+  background: linear-gradient(
+    to right,
+    var(--linearColor1),
+    var(--linearColor2),
+    var(--linearColor1)
+  );
+  width: 80%;
+  margin-top: 5vh;
+  text-align: start;
+}
+
+.list-container li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2em;
+  padding: 15px;
+}
+
+.list-container button {
+  background: var(--whiteColor);
+  color: var(--deleteColor);
+  padding: 5px 3px;
+  font-size: 1em;
+  width: 125px;
+  outline: none;
+  border: none;
+}
